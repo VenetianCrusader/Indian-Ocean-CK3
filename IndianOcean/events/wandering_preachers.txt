@@ -73,7 +73,7 @@ wandering_preachers.2 = {
 	}
 
     immediate = { # Stuff that happens when the event appears on screen, works regardless of what option you select.
-		spawn_shia_preacher_effect = yes
+		spawn_mahayanna_preacher_effect = yes
 	}
 
     option = { # Listen to The Preacher
@@ -105,6 +105,62 @@ wandering_preachers.2 = {
 			base = 15
 		}
 		scope:ismaili_preacher = {
+            	death = { killer = root death_reason = beheading }
+        }
+		add_dread = 10
+       }
+    }
+    
+    # Mahayanna Preacher
+wandering_preachers.3 = {
+    type = character_event
+    title = wandering_preachers.3
+    desc = preachers_2
+    theme = faith
+	override_background = {
+		event_background = temple_mosque
+	}
+    left_portrait = root
+    right_portrait = scope:mahayanna_preacher
+    trigger = { 
+		NOT = {
+			has_religion = religion:buddhism_religion
+		}
+	}
+
+    immediate = { # Stuff that happens when the event appears on screen, works regardless of what option you select.
+		spawn_shia_preacher_effect = yes
+	}
+
+    option = { # Listen to The Preacher
+        name = wandering_preachers.1.b
+		
+		ai_chance = {
+			base = 5
+		}
+		set_character_faith = faith:mahayana
+		add_piety = -100
+	}
+
+ option = { # Expel The Preacher
+        name = wandering_preachers.2.b
+		
+		ai_chance = {
+			base = 80
+		}
+		scope:mahayana_preacher = {
+            banish = yes
+        }
+		add_piety = 100
+}
+
+ option = { # Kill The Preacher
+        name = wandering_preachers.3.b
+		
+		ai_chance = {
+			base = 15
+		}
+		scope:mahayana_preacher = {
             	death = { killer = root death_reason = beheading }
         }
 		add_dread = 10
