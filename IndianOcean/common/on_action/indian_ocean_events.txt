@@ -1,0 +1,46 @@
+on_game_start = { 
+    on_actions = { 
+        wandering_preacher_action
+	wandering_preacher_action_2
+    } 
+} 
+wandering_preacher_action = { 
+
+    effect = {
+        random_ruler = {
+            limit = {
+                any_realm_county = { 
+                    any_county_province = { geographical_region = world_indian_ocean_trade }
+                } 
+            }
+            trigger_event = {
+                id = wandering_preachers.1
+            }
+        }
+        trigger_event = {
+            on_action = wandering_preacher_action
+            days = 365 #or how many days till you want to run this again
+        }
+    }
+}
+
+
+wandering_preacher_action_2 = { 
+
+    effect = {
+        random_ruler = {
+            limit = {
+                any_realm_county = { 
+                    any_county_province = { geographical_region = world_indian_ocean_trade }
+                } 
+            }
+            trigger_event = {
+                id = wandering_preachers.2
+            }
+        }
+        trigger_event = {
+            on_action = wandering_preacher_action
+            days = 365 #or how many days till you want to run this again
+        }
+    }
+}

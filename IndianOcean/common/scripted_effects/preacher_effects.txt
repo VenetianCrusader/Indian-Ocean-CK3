@@ -1,0 +1,47 @@
+spawn_sunni_preacher_effect = {# Naropa
+	create_character = {
+		template = sufi_sunni_preacher_character_template
+		name = Muhammad
+		#location = geographical_region = indian_ocean_trade_region
+		employer = root
+		save_scope_as = ashari_preacher
+	}
+}
+
+spawn_shia_preacher_effect = {# Naropa
+	create_character = {
+		template = sufi_shia_preacher_character_template
+		name = scope: Ishmail
+		#location = geographical_region = indian_ocean_trade_region
+		employer = root
+		save_scope_as = ismaili_preacher
+	}
+}
+
+spawn_vajrayana_preacher_effect = {# Naropa
+	create_character = {
+		template = vajrayana_preacher_character_template
+		name = Chodha
+		#location = geographical_region = indian_ocean_trade_region
+		employer = root
+		save_scope_as = mahasiddha_naropa
+	}
+}
+spawn_mahayana_preacher_effect = {# Naropa
+	create_character = {
+		template = mahayana_preacher_character_template
+		name = Jiang Jinghe
+		#location = geographical_region = indian_ocean_trade_region
+		employer = root
+		save_scope_as = mahasiddha_naropa
+	}
+}
+spawn_theravada_preacher_effect = {# Naropa
+	create_character = {
+		template = theravada_preacher_character_template
+		name = Daivika
+		#location = geographical_region = indian_ocean_trade_region
+		employer = root
+		save_scope_as = mahasiddha_naropa
+	}
+}

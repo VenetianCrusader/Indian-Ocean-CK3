@@ -1,0 +1,112 @@
+namespace = wandering_preachers
+
+# The Wandering Preacher
+wandering_preachers.1 = { 
+    type = character_event
+    title = wandering_preachers.1
+    desc = preachers_1
+    theme = faith
+	override_background = {
+		event_background = temple_mosque
+	}
+    left_portrait = root
+    right_portrait = scope:ashari_preacher
+    trigger = { 
+		NOT = {
+			has_religion = religion:islam_religion
+		}
+	}
+
+    immediate = { # Stuff that happens when the event appears on screen, works regardless of what option you select.
+		spawn_sunni_preacher_effect = yes
+	}
+
+    option = { # Listen to The Preacher
+        name = wandering_preachers.1.a
+		
+		ai_chance = {
+			base = 5
+		}
+		set_character_faith = faith:ashari
+		add_piety = -100
+	}
+
+ option = { # Expel The Preacher
+        name = wandering_preachers.2.a
+		
+		ai_chance = {
+			base = 80
+		}
+		scope:ashari_preacher = {
+            banish = yes
+        }
+		add_piety = 100
+}
+
+ option = { # Kill The Preacher
+        name = wandering_preachers.3.a
+		
+		ai_chance = {
+			base = 15
+		}
+		scope:ashari_preacher = {
+            	death = { killer = root death_reason = beheading }
+        }
+		add_dread = 10
+       }
+    }
+	# Shia Preacher
+wandering_preachers.2 = {
+    type = character_event
+    title = wandering_preachers.2
+    desc = preachers_2
+    theme = faith
+	override_background = {
+		event_background = temple_mosque
+	}
+    left_portrait = root
+    right_portrait = scope:ismaili_preacher
+    trigger = { 
+		NOT = {
+			has_religion = religion:islam_religion
+		}
+	}
+
+    immediate = { # Stuff that happens when the event appears on screen, works regardless of what option you select.
+		spawn_shia_preacher_effect = yes
+	}
+
+    option = { # Listen to The Preacher
+        name = wandering_preachers.1.b
+		
+		ai_chance = {
+			base = 5
+		}
+		set_character_faith = faith:ismaili
+		add_piety = -100
+	}
+
+ option = { # Expel The Preacher
+        name = wandering_preachers.2.b
+		
+		ai_chance = {
+			base = 80
+		}
+		scope:ismaili_preacher = {
+            banish = yes
+        }
+		add_piety = 100
+}
+
+ option = { # Kill The Preacher
+        name = wandering_preachers.3.b
+		
+		ai_chance = {
+			base = 15
+		}
+		scope:ismaili_preacher = {
+            	death = { killer = root death_reason = beheading }
+        }
+		add_dread = 10
+       }
+    }
