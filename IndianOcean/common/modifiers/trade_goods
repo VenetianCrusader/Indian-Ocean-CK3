@@ -51,3 +51,17 @@ produces_elephants = {
     mercenary_hire_cost_mult = -10
      tax_mult = 3
 }
+
+produces_stone = {
+    icon = county_modifier_control_positive
+   castle_holding_build_gold_cost = -100
+     tax_mult = 1
+}
+
+produces_wood = {
+    icon = county_modifier_control_positive
+   tribal_holding_build_gold_cost = -100
+     tax_mult = 1
+}
+
+
