@@ -64,4 +64,9 @@ produces_wood = {
      tax_mult = 1
 }
 
+produces_iron = {
+    icon = county_modifier_control_positive
+  heavy_infantry_damage_mult = 0.05
+     tax_mult = 2
+}
 
