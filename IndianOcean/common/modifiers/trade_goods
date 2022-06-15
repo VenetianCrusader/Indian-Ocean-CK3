@@ -29,8 +29,16 @@ produces_saffron = {
     mercenary_hire_cost_mult = -0.25
   tax_mult = 2
 }
-produces_incense = {
+
+produces_cloves = {
     icon = county_modifier_control_positive
+  different_faith_opinion = 5
+  same_faith_opinion = 5
+  tax_mult = 2
+}
+
+produces_incense = {
+icon = county_modifier_control_positive
     tax_mult = 3
     clergy_opinion = 5
     monthly_piety = 0.1
