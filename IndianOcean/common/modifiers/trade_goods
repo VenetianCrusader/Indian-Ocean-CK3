@@ -37,6 +37,17 @@ produces_cloves = {
   tax_mult = 2
 }
 
+produces_cinnamon = {
+    icon = county_modifier_control_positive
+    tax_mult = 4
+}
+
+produces_spices = {
+    icon = county_modifier_control_positive
+    life_expectancy = 0.1
+    tax_mult = 2
+}
+
 produces_incense = {
 icon = county_modifier_control_positive
     tax_mult = 3
@@ -52,6 +63,35 @@ produces_marble = {
     monthly_prestige = 0.1
   
 }
+
+produces_emeralds = {
+    icon = county_modifier_control_positive
+    tax_mult = 4
+    clergy_opinion = 5
+  
+}
+
+produces_rubies = {
+    icon = county_modifier_control_positive
+    tax_mult = 4
+    monthly_prestige = 0.25
+  
+}
+
+produces_sapphires = {
+    icon = county_modifier_control_positive
+    tax_mult = 4
+    monthly_piety = 0.25
+  
+}
+
+produces_diamonds = { # unlocks diamond sword and diamond armor
+    icon = county_modifier_control_positive
+    tax_mult = 4
+    health = 2
+  
+}-
+
 
 # Strategic Resources
 produces_elephants = {
@@ -74,7 +114,7 @@ produces_wood = {
 
 produces_iron = {
     icon = county_modifier_control_positive
-  heavy_infantry_damage_mult = 0.05
+     heavy_infantry_damage_mult = 0.05
      tax_mult = 2
 }
 
