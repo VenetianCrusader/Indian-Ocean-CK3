@@ -1,120 +1,61 @@
-# Food
-produces_rice = {
+# Strategic Resources
+produces_iron = {
     icon = county_modifier_control_positive
     tax_mult = 1
-development_growth = 0.5
 }
-produces_grain = {
+produces_horses = {
     icon = county_modifier_control_positive
     tax_mult = 1
-  development_growth = 0.1
 }
-
-produces_millet
+produces_wood = {
     icon = county_modifier_control_positive
     tax_mult = 1
-  development_growth = 0.25
 }
 
-produces_livestock
+produces_elephants = {
     icon = county_modifier_control_positive
-    tax_mult = 1
-  levy_size  = 0.25
+    tax_mult = 3
 }
 
-
-# Luxury Resources
-produces_saffron = {
+produces_steppe_horses = {
     icon = county_modifier_control_positive
-    mercenary_hire_cost_mult = -0.25
-  tax_mult = 2
-}
-
-produces_cloves = {
-    icon = county_modifier_control_positive
-  different_faith_opinion = 5
-  same_faith_opinion = 5
-  tax_mult = 2
-}
-
-produces_cinnamon = {
-    icon = county_modifier_control_positive
-    tax_mult = 4
-}
-
-produces_spices = {
-    icon = county_modifier_control_positive
-    life_expectancy = 0.1
     tax_mult = 2
 }
 
-produces_incense = {
-icon = county_modifier_control_positive
-    tax_mult = 3
-    clergy_opinion = 5
-    monthly_piety = 0.1
-  
+produces_camels = {
+    icon = county_modifier_control_positive
+    tax_mult = 1
 }
 
-produces_marble = {
+#Food
+produces_grain = {
     icon = county_modifier_control_positive
-    tax_mult = 3
-    vassal_opinion = 5
-    monthly_prestige = 0.1
-  
+    tax_mult = 1
 }
 
-produces_emeralds = {
+produces_salt = {
     icon = county_modifier_control_positive
-    tax_mult = 4
-    clergy_opinion = 5
-  
+    tax_mult = 2
 }
 
-produces_rubies = {
+produces_fish = {
     icon = county_modifier_control_positive
-    tax_mult = 4
-    monthly_prestige = 0.25
-  
+    tax_mult = 1
 }
 
-produces_sapphires = {
+produces_honey = {
     icon = county_modifier_control_positive
-    tax_mult = 4
-    monthly_piety = 0.25
-  
+    tax_mult = 2
 }
 
-produces_diamonds = { # unlocks diamond sword and diamond armor
+produces_livestock = {
     icon = county_modifier_control_positive
-    tax_mult = 4
-    health = 2
-  
-}-
-
-
-# Strategic Resources
-produces_elephants = {
-    icon = county_modifier_control_positive
-    mercenary_hire_cost_mult = -10
-     tax_mult = 3
+    tax_mult = 1
 }
 
-produces_stone = {
+produces_vegetables = {
     icon = county_modifier_control_positive
-   castle_holding_build_gold_cost = -100
-     tax_mult = 1
+    tax_mult = 1
 }
 
-produces_wood = {
-    icon = county_modifier_control_positive
-   tribal_holding_build_gold_cost = -100
-     tax_mult = 1
-}
-
-produces_iron = {
-    icon = county_modifier_control_positive
-     heavy_infantry_damage_mult = 0.05
-     tax_mult = 2
-}
-
+# Luxury Resources
